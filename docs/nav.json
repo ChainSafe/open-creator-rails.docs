@@ -13,10 +13,10 @@
     {
       "title": "Protocol",
       "items": [
-        { "label": "Protocol specification", "path": "../PROTOCOL.md" },
-        { "label": "Glossary", "path": "../GLOSSARY.md" },
-        { "label": "Architecture", "path": "../ARCHITECTURE.md" },
-        { "label": "Protocol surface: FROZEN", "path": "../protocol-surface/FROZEN.md" }
+        { "label": "Protocol specification", "path": "PROTOCOL.md" },
+        { "label": "Glossary", "path": "GLOSSARY.md" },
+        { "label": "Architecture", "path": "ARCHITECTURE.md" },
+        { "label": "Protocol surface: FROZEN", "path": "protocol-surface/FROZEN.md" }
       ]
     },
     {
@@ -42,9 +42,9 @@
     {
       "title": "Payment rails",
       "items": [
-        { "label": "Payment methods", "path": "../OCR_PAYMENT_METHODS.md" },
-        { "label": "Extending: Stripe / fiat", "path": "../OCR_EXTENDING_STRIPE.md" },
-        { "label": "Extending: predicate unlock", "path": "../OCR_EXTENDING_PREDICATE_UNLOCK.md" }
+        { "label": "Payment methods", "path": "OCR_PAYMENT_METHODS.md" },
+        { "label": "Extending: Stripe / fiat", "path": "OCR_EXTENDING_STRIPE.md" },
+        { "label": "Extending: predicate unlock", "path": "OCR_EXTENDING_PREDICATE_UNLOCK.md" }
       ]
     }
   ]

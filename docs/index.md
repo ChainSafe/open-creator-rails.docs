@@ -38,7 +38,7 @@ is authoritative; the indexer and SDKs are acceleration layers.
   See [MCP](components/mcp.md).
 - **Alternative payment rails** — accept HTTP / agent payments via the x402
   `ocr-permit-v1` scheme that still settles through `Asset.subscribe()`. See
-  [x402 adapter](components/x402-adapter.md) and [Payment methods](../OCR_PAYMENT_METHODS.md).
+  [x402 adapter](components/x402-adapter.md) and [Payment methods](OCR_PAYMENT_METHODS.md).
 
 ---
 
@@ -54,10 +54,10 @@ is authoritative; the indexer and SDKs are acceleration layers.
 ## Documentation map
 
 ### Protocol
-- [Protocol Specification](../PROTOCOL.md) — the primitive, roles, on-chain components, payment flow
-- [Glossary](../GLOSSARY.md) — canonical term definitions
-- [Architecture](../ARCHITECTURE.md) — component map and data flows
-- Protocol surface: [FROZEN](../protocol-surface/FROZEN.md) · [VERSIONED](../protocol-surface/VERSIONED.md) · [ADDITIVE](../protocol-surface/ADDITIVE.md)
+- [Protocol Specification](PROTOCOL.md) — the primitive, roles, on-chain components, payment flow
+- [Glossary](GLOSSARY.md) — canonical term definitions
+- [Architecture](ARCHITECTURE.md) — component map and data flows
+- Protocol surface: [FROZEN](protocol-surface/FROZEN.md) · [VERSIONED](protocol-surface/VERSIONED.md) · [ADDITIVE](protocol-surface/ADDITIVE.md)
 
 ### Components
 - [Contracts](components/contracts.md) — `Asset`, `AssetRegistry`
@@ -74,9 +74,9 @@ is authoritative; the indexer and SDKs are acceleration layers.
 - [Running the indexer locally](guides/running-the-indexer.md)
 
 ### Payment rails & extension
-- [OCR payment methods](../OCR_PAYMENT_METHODS.md)
-- [Extending with Stripe / fiat](../OCR_EXTENDING_STRIPE.md)
-- [Extending with predicate unlock](../OCR_EXTENDING_PREDICATE_UNLOCK.md)
+- [OCR payment methods](OCR_PAYMENT_METHODS.md)
+- [Extending with Stripe / fiat](OCR_EXTENDING_STRIPE.md)
+- [Extending with predicate unlock](OCR_EXTENDING_PREDICATE_UNLOCK.md)
 
 ---
 

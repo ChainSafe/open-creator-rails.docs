@@ -44,4 +44,4 @@ Trigger the subscribe flow (permit + transaction) per the README, and implement
 ## Next
 
 - [Unity SDK reference](../components/sdk-unity.md)
-- [Protocol specification](../../PROTOCOL.md)
+- [Protocol specification](../PROTOCOL.md)

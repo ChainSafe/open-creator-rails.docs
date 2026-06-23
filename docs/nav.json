@@ -1,0 +1,51 @@
+{
+  "title": "Open Creator Rails",
+  "subtitle": "Protocol documentation",
+  "default": "index.md",
+  "sections": [
+    {
+      "title": "Overview",
+      "items": [
+        { "label": "Home", "path": "index.md" },
+        { "label": "Verification matrix", "path": "VERIFICATION.md" }
+      ]
+    },
+    {
+      "title": "Protocol",
+      "items": [
+        { "label": "Protocol specification", "path": "../PROTOCOL.md" },
+        { "label": "Glossary", "path": "../GLOSSARY.md" },
+        { "label": "Architecture", "path": "../ARCHITECTURE.md" },
+        { "label": "Protocol surface: FROZEN", "path": "../protocol-surface/FROZEN.md" }
+      ]
+    },
+    {
+      "title": "Components",
+      "items": [
+        { "label": "Contracts", "path": "components/contracts.md" },
+        { "label": "Indexer", "path": "components/indexer.md" },
+        { "label": "TypeScript SDK", "path": "components/sdk-typescript.md" },
+        { "label": "Unity SDK", "path": "components/sdk-unity.md" },
+        { "label": "Demo (Pet Shop)", "path": "components/demo.md" },
+        { "label": "x402 adapter", "path": "components/x402-adapter.md" },
+        { "label": "MCP server", "path": "components/mcp.md" }
+      ]
+    },
+    {
+      "title": "Guides",
+      "items": [
+        { "label": "Getting started: TypeScript", "path": "guides/getting-started-typescript.md" },
+        { "label": "Getting started: Unity", "path": "guides/getting-started-unity.md" },
+        { "label": "Running the indexer", "path": "guides/running-the-indexer.md" }
+      ]
+    },
+    {
+      "title": "Payment rails",
+      "items": [
+        { "label": "Payment methods", "path": "../OCR_PAYMENT_METHODS.md" },
+        { "label": "Extending: Stripe / fiat", "path": "../OCR_EXTENDING_STRIPE.md" },
+        { "label": "Extending: predicate unlock", "path": "../OCR_EXTENDING_PREDICATE_UNLOCK.md" }
+      ]
+    }
+  ]
+}

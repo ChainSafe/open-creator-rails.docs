@@ -12,7 +12,7 @@ depends on [viem](https://viem.sh) and targets the OCR contracts.
 ## 2. Derive a subject
 
 ```ts
-import { subscriberHash } from "open-creator-rails-sdk";
+import { subscriberHash } from "@chainsafe/open-creator-rails-sdk";
 
 const subscriber = subscriberHash("my-app", walletAddress);
 // keccak256(abi.encode("my-app", walletAddress))

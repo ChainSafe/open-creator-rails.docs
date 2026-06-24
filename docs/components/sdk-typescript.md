@@ -9,7 +9,7 @@ access state, and querying the indexer.
 ## Subscriber identity
 
 ```ts
-import { subscriberHash } from "open-creator-rails-sdk";
+import { subscriberHash } from "@chainsafe/open-creator-rails-sdk";
 // keccak256(abi.encode(subscriberId /*string*/, subscriberAddress /*address*/))
 const subscriber = subscriberHash("demo", walletAddress);
 ```

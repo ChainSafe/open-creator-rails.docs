@@ -1,7 +1,7 @@
 # Demo — Pet Shop
 
 Repo: [open-creator-rails.demo](https://github.com/ChainSafe/open-creator-rails.demo) ·
-Story: [docs/OCR_PET_SHOP.md](https://github.com/ChainSafe/open-creator-rails.demo/blob/main/docs/OCR_PET_SHOP.md)
+Story: [open-creator-rails.demo](https://github.com/ChainSafe/open-creator-rails.demo)
 
 A React + Wagmi reference application ("on-chain Patreon") that exercises the full
 stack: contracts, indexer, and the TypeScript SDK.

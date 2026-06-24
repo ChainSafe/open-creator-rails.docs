@@ -201,6 +201,44 @@
     return { html: out, next: i };
   }
 
+  // ---- citation annotation -------------------------------------------------
+  // Wraps source citations like (Asset.sol:202-204) in <span class="citation">
+  // so they can be styled down visually while remaining in the DOM for tooling.
+  var CITATION_RE = /(\([A-Za-z][A-Za-z0-9./]*\.[a-z]+:[0-9][0-9,\s-]*\))/g;
+
+  function annotateCitations(el) {
+    var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (node) {
+        var p = node.parentNode;
+        while (p && p !== el) {
+          if (p.tagName === "CODE" || p.tagName === "PRE") return NodeFilter.FILTER_REJECT;
+          p = p.parentNode;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }, false);
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(function (node) {
+      CITATION_RE.lastIndex = 0;
+      if (!CITATION_RE.test(node.nodeValue)) return;
+      CITATION_RE.lastIndex = 0;
+      var frag = document.createDocumentFragment();
+      var text = node.nodeValue;
+      var last = 0, m;
+      while ((m = CITATION_RE.exec(text)) !== null) {
+        if (m.index > last) frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+        var span = document.createElement("span");
+        span.className = "citation";
+        span.textContent = m[0];
+        frag.appendChild(span);
+        last = m.index + m[0].length;
+      }
+      if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+      node.parentNode.replaceChild(frag, node);
+    });
+  }
+
   // ---- navigation ----------------------------------------------------------
   function buildNav() {
     var html = "";
@@ -236,6 +274,7 @@
       })
       .then(function (md) {
         docEl.innerHTML = render(md, path);
+        annotateCitations(docEl);
         setActive(path);
         document.body.classList.remove("nav-open");
         window.scrollTo(0, 0);
